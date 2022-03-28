@@ -21,6 +21,10 @@ const ProductSchema = mongoose.Schema({
     type: Array,
     required: true,
   },
+  category: {
+    type: Array,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model('Products', ProductSchema);
