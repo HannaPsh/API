@@ -27,6 +27,7 @@ router.post('/', async (req, res) => {
     price: req.body.price,
     availableSizes: req.body.availableSizes,
     category: req.body.category,
+    orders: req.body.orders,
   });
   try {
     const savedProduct = await product.save();
@@ -61,6 +62,7 @@ router.patch('/:productId', async (req, res) => {
           price: req.body.price,
           availableSizes: req.body.availableSizes,
           category: req.body.category,
+          orders: req.body.orders,
         },
       }
     );
