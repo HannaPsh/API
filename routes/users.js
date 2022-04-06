@@ -25,6 +25,7 @@ router.post('/', async (req, res) => {
     password: req.body.password,
     email: req.body.email,
     phone: req.body.phone,
+    orders: req.body.orders,
   });
   try {
     const savedUser = await user.save();
@@ -55,6 +56,7 @@ router.patch('/:userId', async (req, res) => {
           password: req.body.password,
           email: req.body.email,
           phone: req.body.phone,
+          orders: req.body.orders,
         },
       }
     );
