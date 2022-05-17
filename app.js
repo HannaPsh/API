@@ -15,7 +15,7 @@ app.use('/users', usersRoute);
 
 // Connect DB
 mongoose.connect(
-  'mongodb+srv://hannapshanich:0813@cluster0.9hnyd.mongodb.net/Cluster0?retryWrites=true&w=majority',
+  'mongodb+srv://hannapshanich:hanna@cluster0.9hnyd.mongodb.net/Cluster0?retryWrites=true&w=majority',
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log('Connected to DB')
 );
