@@ -13,6 +13,7 @@ app.use('/products', productsRoute);
 const usersRoute = require('./routes/users');
 app.use('/users', usersRoute);
 
+const PORT = process.env.PORT || 5000;
 // Connect DB
 mongoose.connect(
   'mongodb+srv://hannapshanich:hanna@cluster0.9hnyd.mongodb.net/Cluster0?retryWrites=true&w=majority',
@@ -20,4 +21,4 @@ mongoose.connect(
   () => console.log('Connected to DB')
 );
 
-app.listen(5000);
+app.listen(PORT);
