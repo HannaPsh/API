@@ -16,7 +16,7 @@ app.use('/users', usersRoute);
 const PORT = process.env.PORT || 5000;
 // Connect DB
 mongoose.connect(
-  'mongodb+srv://hannapshanich:hanna@cluster0.9hnyd.mongodb.net/Cluster0?retryWrites=true&w=majority',
+  'process.env.DB_URL',
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log('Connected to DB')
 );
